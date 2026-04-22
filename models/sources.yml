@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: dev_catalog
+    schema: bronze
+    tables:
+      - name: employee_part

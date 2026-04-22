@@ -1,1 +1,16 @@
+name: dbt_ridge
+config-version: 2
 
+profile: dbt_ridge
+
+model-paths: ["models"]
+snapshot-paths: ["snapshots"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+
+models:
+  dbt_ridge:
+    staging:
+      +materialized: view
+    silver:
+      +materialized: table
